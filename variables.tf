@@ -1,3 +1,3 @@
 variable "string_length" {
-  default = 8
+  default = 16
 }
