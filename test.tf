@@ -40,10 +40,6 @@ resource "helm_release" "example" {
   chart      = "redis"
   version    = "16.10.0"
 
-  values = [
-    "${file("values.yaml")}"
-  ]
-
   set {
     name  = "cluster.enabled"
     value = "true"
