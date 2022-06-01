@@ -4,10 +4,6 @@ resource "null_resource" "aws" {
 	}
 
 	provisioner "local-exec" {
-		command = "aws --version"
+		command = "cat /etc/resolv.conf"
 	}
-}
-
-output "shell" {
-  value = null_resource.aws
 }
