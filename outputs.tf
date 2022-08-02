@@ -13,3 +13,11 @@ output "map" {
     ]
   }
 }
+
+output "bool" {
+  value = false
+}
+
+output "list" {
+  value = ["a", 1]
+}
