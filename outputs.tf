@@ -2,7 +2,7 @@ output "random_string" {
   value = random_string.this.*.result
 }
 
-output "map" {
+output "object" {
   value = {
     "a" = "1"
     "b" = "2"
@@ -11,6 +11,14 @@ output "map" {
       3.2,
       3.3,
     ]
+  }
+}
+
+output "map" {
+  value = {
+    "a" = "1"
+    "b" = "2"
+    "c" = "3"
   }
 }
 
