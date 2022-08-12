@@ -1,7 +1,7 @@
 resource "random_string" "this" {
   count = length(var.counter)
 
-  length  = count.value
+  length  = var.counter[count.index]
   lower   = true
   number  = true
   special = false
