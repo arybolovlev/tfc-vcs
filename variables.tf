@@ -2,6 +2,6 @@ variable "string_length" {
   default = 32
 }
 
-variable "count" {
+variable "counter" {
   default = 2
 }
