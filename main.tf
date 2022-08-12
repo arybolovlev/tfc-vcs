@@ -1,5 +1,5 @@
 resource "random_string" "this" {
-  count = var.count
+  count = var.counter
 
   length  = var.string_length
   lower   = true
