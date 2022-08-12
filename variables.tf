@@ -3,5 +3,10 @@ variable "string_length" {
 }
 
 variable "counter" {
-  default = 2
+  default = [
+    2,
+    4,
+    8,
+    16,
+  ]
 }
