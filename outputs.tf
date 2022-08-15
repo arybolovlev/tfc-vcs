@@ -33,3 +33,7 @@ output "list" {
 output "json" {
   value = var.json
 }
+
+output "string_length" {
+  value = var.string_length
+}
