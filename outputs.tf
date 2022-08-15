@@ -34,7 +34,7 @@ output "json" {
   value = var.json
 }
 
-outpus "secret" {
+output "secret" {
   value = "s3kr3t"
   sensitive = true
 }
