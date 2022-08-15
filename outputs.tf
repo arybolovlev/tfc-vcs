@@ -34,6 +34,11 @@ output "json" {
   value = var.json
 }
 
+outpus "secret" {
+  value = "s3kr3t"
+  sensitive = true
+}
+
 output "string_length" {
   value = var.string_length
 }
