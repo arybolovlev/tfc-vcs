@@ -10,3 +10,7 @@ variable "counter" {
     16,
   ]
 }
+
+variable "json" {
+  default = "{}"
+}
