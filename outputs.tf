@@ -35,7 +35,7 @@ output "json" {
 }
 
 output "secret" {
-  value = "s3kr3tPassword"
+  value = "s3kr3tPassword007"
   sensitive = true
 }
 
