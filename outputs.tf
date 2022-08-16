@@ -30,9 +30,14 @@ output "list" {
   value = ["a", 1]
 }
 
-output "json" {
+#output "json" {
+#  value = var.json
+#}
+
+output "json2" {
   value = var.json
 }
+
 
 output "secret" {
   value = "s3kr3t"
