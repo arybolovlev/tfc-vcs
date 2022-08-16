@@ -30,9 +30,9 @@ output "list" {
   value = ["a", 1]
 }
 
-#output "json" {
-#  value = var.json
-#}
+output "json" {
+  value = var.json
+}
 
 output "json2" {
   value = var.json
