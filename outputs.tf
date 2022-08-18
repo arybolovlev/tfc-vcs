@@ -36,7 +36,7 @@ output "json" {
 
 output "secret" {
   value = "s3kr3tPassword007"
-  sensitive = true
+  sensitive = false
 }
 
 output "string_length" {
