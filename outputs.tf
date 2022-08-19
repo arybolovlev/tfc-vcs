@@ -27,7 +27,7 @@ output "bool" {
 }
 
 output "list" {
-  value = [1, 2, 4, 8, 16, 32, 64]
+  value = [1, 2, 4, 8, 16, 32]
 }
 
 output "json" {
