@@ -8,6 +8,10 @@ resource "random_string" "this" {
   upper   = true
 }
 
+resource "time_sleep" "wait" {
+  create_duration = "2m"
+}
+
 variable "remote_state" {
   default = false
 }
