@@ -22,9 +22,9 @@
 #     }
 #   }
   
-#output "bool" {
-#  value = false
-#}
+output "bool" {
+  value = false
+}
   
 #   output "list" {
 #     value = [1, 2, 4, 8, 16, 32]
@@ -38,10 +38,10 @@
 #     value = var.json
 #   }
   
-#   output "secret" {
-#     value = "s3kr3tPassword007"
-#     sensitive = false
-#   }
+output "secret" {
+  value = "s3kr3tPassword007"
+  sensitive = true
+}
   
 #   output "string_length" {
 #     value = var.string_length
