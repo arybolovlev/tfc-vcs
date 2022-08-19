@@ -30,6 +30,10 @@ output "list" {
   value = [1, 2, 4, 8, 16, 32]
 }
 
+output "counter" {
+  value = var.counter
+}
+
 output "json" {
   value = var.json
 }
