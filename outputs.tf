@@ -22,9 +22,9 @@
 #     }
 #   }
   
-   output "bool" {
-value = false
-  }
+# output "bool" {
+#   value = false
+# }
   
 #   output "list" {
 #     value = [1, 2, 4, 8, 16, 32]
