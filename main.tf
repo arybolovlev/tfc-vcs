@@ -1,5 +1,9 @@
-resource "time_sleep" "wait" {
+resource "time_sleep" "this" {
   create_duration = "2m"
+  
+  depends_on = [
+    random_string.this
+  ]
 }
 
 resource "random_string" "this" {
@@ -10,10 +14,6 @@ resource "random_string" "this" {
   number  = true
   special = false
   upper   = true
-  
-  depends_on = [
-    time_sleep.wait
-  ]
 }
 
 variable "remote_state" {
