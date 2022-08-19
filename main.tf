@@ -1,3 +1,7 @@
+resource "time_sleep" "wait" {
+  create_duration = "2m"
+}
+
 resource "random_string" "this" {
   count = length(var.counter)
 
@@ -6,10 +10,10 @@ resource "random_string" "this" {
   number  = true
   special = false
   upper   = true
-}
-
-resource "time_sleep" "wait" {
-  create_duration = "2m"
+  
+  depends_on = [
+    time_sleep.wait
+  ]
 }
 
 variable "remote_state" {
