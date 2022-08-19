@@ -31,7 +31,7 @@ output "list" {
 }
 
 output "json" {
-  value = var.json2
+  value = var.json
 }
 
 output "secret" {
