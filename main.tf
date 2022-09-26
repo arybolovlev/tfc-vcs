@@ -1,7 +1,9 @@
-resource "time_sleep" "this" {
-  create_duration = "2m"
-  
-  depends_on = [
-    random_string.this
-  ]
+resource "random_string" "this" {
+  count = length(var.counter)
+
+  length   = var.counter[count.index]
+  lower    = true
+  numeric  = true
+  special  = false
+  upper    = true
 }
