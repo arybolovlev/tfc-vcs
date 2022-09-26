@@ -4,13 +4,9 @@ variable "string_length" {
 
 variable "counter" {
   default = [
+    1,
     2,
     4,
     8,
-    16,
   ]
-}
-
-variable "json" {
-  default = "{}"
 }
