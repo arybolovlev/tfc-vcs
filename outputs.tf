@@ -12,5 +12,8 @@ output "random_strings" {
 }
 
 output "issue" {
-  value = ""level-a": {"level-b": {"point-a": "value-a","point-b": "value-b","point-c": "","point-d": "value-d","point-e": "value-e","id": "JKASKdhkhasdkajs28712","kubernetes":[{"step-a": "step-a","step-b": "step-a","step-c": "step-a"}],"name-a": "name-value","name-b": ""}}}""
+  value = tomap({
+  a = "b"
+  c = "d"
+})
 }
