@@ -15,5 +15,6 @@ output "issue" {
   value = tomap({
   a = "b"
   c = "d"
+  e = []
 })
 }
