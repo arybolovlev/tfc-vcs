@@ -12,7 +12,7 @@ output "random_strings" {
 }
 
 output "issue" {
-  value = tomap({
+  value = object({
   a = "b"
   c = "d"
   e = []
