@@ -10,11 +10,3 @@ output "secret" {
 output "random_strings" {
   value = random_string.this.*.result
 }
-
-output "issue" {
-  value = tomap(object({
-  a = "b"
-  c = "d"
-  e = []
-}))
-}
