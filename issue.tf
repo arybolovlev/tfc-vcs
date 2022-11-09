@@ -4,7 +4,7 @@ variable "issue" {
     size     = string
     username = string
     password = string
-    list     = list
+    list     = list(string)
   })
 
   default = {
