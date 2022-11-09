@@ -12,9 +12,9 @@ output "random_strings" {
 }
 
 output "issue" {
-  value = object({
+  value = tomap(object({
   a = "b"
   c = "d"
   e = []
-})
+}))
 }
