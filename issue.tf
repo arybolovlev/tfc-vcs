@@ -1,8 +1,20 @@
 variable "issue" {
-  type = map(object({
-    cidr_block = string
-    subnets    = map(object({ cidr_block = string }))
-  }))
+  type = object({
+    name     = string
+    size     = string
+    username = string
+    password = string
+    list     = list
+  })
+
+  default = {
+      name     = "example-vm"
+      size     = "Standard_F2"
+      username = "adminuser"
+      password = "Notallowed1!"
+      list     = []
+    }
+  
 }
 
 
