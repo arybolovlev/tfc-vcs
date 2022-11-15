@@ -141,7 +141,22 @@ variable "empty_map_value" {
   type = map
 
   default = {
-    "value" = null
+    "key" = null
+  }
+  
+}
+
+output "empty_map_value" {
+  value = var.empty_map_value
+}
+
+#####
+
+variable "empty_map_key" {
+  type = map
+
+  default = {
+    "" = "value"
   }
   
 }
