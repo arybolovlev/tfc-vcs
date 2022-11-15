@@ -90,3 +90,19 @@ variable "map" {
 output "map" {
   value = var.map
 }
+
+#####
+
+variable "map_list" {
+  type = map(list(string))
+
+  default = {
+    "one" = ["een", "1"]
+    "two" = ["twee", "2"]
+  }
+  
+}
+
+output "map_list" {
+  value = var.map_list
+}
