@@ -161,6 +161,6 @@ variable "empty_map_key" {
   
 }
 
-output "empty_map_value" {
-  value = var.empty_map_value
+output "empty_map_key" {
+  value = var.empty_map_key
 }
