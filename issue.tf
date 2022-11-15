@@ -181,7 +181,13 @@ output "null_map" {
 #####
 
 variable "tuple_complex" {
-  type = tuple([object({"data" = map(string)})])
+  type = tuple(
+    [
+      object({
+        data = map(string)
+      })
+    ]
+  )
 
   default = [
     {
