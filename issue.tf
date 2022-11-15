@@ -59,3 +59,17 @@ output "no_issue" {
 output "string" {
   value = "string"
 }
+
+
+#####
+
+variable "list" {
+  type = list(string)
+
+  default = ["een", "twee"]
+  
+}
+
+output "list" {
+  value = var.list
+}
