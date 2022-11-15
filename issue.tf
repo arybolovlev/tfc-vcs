@@ -106,3 +106,46 @@ variable "map_list" {
 output "map_list" {
   value = var.map_list
 }
+
+
+#####
+
+variable "empty_list" {
+  type = list(string)
+
+  default = []
+  
+}
+
+output "empty_list" {
+  value = var.empty_list
+}
+
+
+#####
+
+variable "empty_map" {
+  type = map
+
+  default = {}
+  
+}
+
+output "empty_map" {
+  value = var.empty_map
+}
+
+#####
+
+variable "empty_map_value" {
+  type = map
+
+  default = {
+    "value" = null
+  }
+  
+}
+
+output "empty_map_value" {
+  value = var.empty_map_value
+}
