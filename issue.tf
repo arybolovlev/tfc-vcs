@@ -74,6 +74,18 @@ output "list" {
   value = var.list
 }
 
+#####
+
+variable "list_int" {
+  type = list(integer)
+
+  default = [1, 2]
+  
+}
+
+output "list_int" {
+  value = var.list_int
+}
 
 #####
 
