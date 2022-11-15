@@ -53,3 +53,9 @@ variable "no_issue" {
 output "no_issue" {
   value = var.no_issue
 }
+
+#####
+
+output "string" {
+  value = "string"
+}
