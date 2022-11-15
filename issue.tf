@@ -184,7 +184,7 @@ variable "tuple_complex" {
   type = tuple(
     [
       object({
-        data = map(list)
+        data = map(list(string))
       })
     ]
   )
