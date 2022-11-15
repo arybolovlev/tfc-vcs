@@ -181,12 +181,14 @@ output "null_map" {
 #####
 
 variable "tuple_complex" {
-  type = tuple(object(map))
+  type = tuple(object({
+    map = map
+  }))
 
   default = [
-    object({
-      map = map
-    })
+    {
+      "key" = "value"
+    }
   ]
   
 }
