@@ -191,8 +191,8 @@ variable "tuple_complex" {
 
   default = [
     {
-      #"data" = null
-      "data" = {
+      #data = null
+      data = {
         "key" = []
       }
     }
