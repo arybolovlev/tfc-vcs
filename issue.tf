@@ -77,7 +77,7 @@ output "list" {
 #####
 
 variable "list_int" {
-  type = list(int)
+  type = list(number)
 
   default = [1, 2]
   
