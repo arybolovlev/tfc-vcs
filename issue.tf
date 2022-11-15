@@ -73,3 +73,20 @@ variable "list" {
 output "list" {
   value = var.list
 }
+
+
+#####
+
+variable "map" {
+  type = map
+
+  default = {
+    "one" = "een"
+    "two" = "twee"
+  }
+  
+}
+
+output "map" {
+  value = var.map
+}
