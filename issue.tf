@@ -177,3 +177,20 @@ variable "null_map" {
 output "null_map" {
   value = var.null_map
 }
+
+#####
+
+variable "tuple_complex" {
+  type = tuple(object(map))
+
+  default = [
+    object({
+      map = map
+    })
+  ]
+  
+}
+
+output "tuple_complex" {
+  value = var.tuple_complex
+}
