@@ -164,3 +164,16 @@ variable "empty_map_key" {
 output "empty_map_key" {
   value = var.empty_map_key
 }
+
+#####
+
+variable "null_map" {
+  type = map
+
+  default = null
+  
+}
+
+output "null_map" {
+  value = var.null_map
+}
