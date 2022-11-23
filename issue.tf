@@ -5,7 +5,6 @@ variable "cm_secret" {
 
 output "cm_secret" {
   value = var.cm_secret
-  sensitive = true
 }
 
 #####
