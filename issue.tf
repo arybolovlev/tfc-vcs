@@ -1,217 +1,228 @@
-variable "issue" {
-  type = object({
-    string = string
-    list   = list(string)
-  })
-
-  default = {
-      string = "text"
-      list   = []
-    }
-  
+variable "cm_secret" {
+  type = int
+  default = 0
 }
 
-output "issue" {
-  value = var.issue
+output "cm_secret" {
+  value = var.cm_secret
 }
 
 #####
 
-variable "issue_2" {
-  type = object({
-    string = string
-    list   = list(string)
-  })
+# variable "issue" {
+#   type = object({
+#     string = string
+#     list   = list(string)
+#   })
 
-  default = {
-      string = "text"
-      list   = ["een", "twee"]
-    }
+#   default = {
+#       string = "text"
+#       list   = []
+#     }
   
-}
+# }
 
-output "issue_2" {
-  value = var.issue_2
-}
+# output "issue" {
+#   value = var.issue
+# }
 
+# #####
 
-#####
+# variable "issue_2" {
+#   type = object({
+#     string = string
+#     list   = list(string)
+#   })
 
-variable "no_issue" {
-  type = object({
-    string = string
-    list   = list(string)
-  })
-
-  default = {
-      string = "text"
-      list   = ["een"]
-    }
+#   default = {
+#       string = "text"
+#       list   = ["een", "twee"]
+#     }
   
-}
+# }
 
-output "no_issue" {
-  value = var.no_issue
-}
-
-#####
-
-output "string" {
-  value = "string"
-}
+# output "issue_2" {
+#   value = var.issue_2
+# }
 
 
-#####
+# #####
 
-variable "list" {
-  type = list(string)
+# variable "no_issue" {
+#   type = object({
+#     string = string
+#     list   = list(string)
+#   })
 
-  default = ["een", "twee"]
+#   default = {
+#       string = "text"
+#       list   = ["een"]
+#     }
   
-}
+# }
 
-output "list" {
-  value = var.list
-}
+# output "no_issue" {
+#   value = var.no_issue
+# }
 
-#####
+# #####
 
-variable "list_int" {
-  type = list(number)
+# output "string" {
+#   value = "string"
+# }
 
-  default = [1, 2]
+
+# #####
+
+# variable "list" {
+#   type = list(string)
+
+#   default = ["een", "twee"]
   
-}
+# }
 
-output "list_int" {
-  value = var.list_int
-}
+# output "list" {
+#   value = var.list
+# }
 
-#####
+# #####
 
-variable "map" {
-  type = map
+# variable "list_int" {
+#   type = list(number)
 
-  default = {
-    "one" = "een"
-    "two" = "twee"
-  }
+#   default = [1, 2]
   
-}
+# }
 
-output "map" {
-  value = var.map
-}
+# output "list_int" {
+#   value = var.list_int
+# }
 
-#####
+# #####
 
-variable "map_list" {
-  type = map(list(string))
+# variable "map" {
+#   type = map
 
-  default = {
-    "one" = ["een", "1"]
-    "two" = ["twee", "2"]
-  }
+#   default = {
+#     "one" = "een"
+#     "two" = "twee"
+#   }
   
-}
+# }
 
-output "map_list" {
-  value = var.map_list
-}
+# output "map" {
+#   value = var.map
+# }
 
+# #####
 
-#####
+# variable "map_list" {
+#   type = map(list(string))
 
-variable "empty_list" {
-  type = list(string)
-
-  default = []
+#   default = {
+#     "one" = ["een", "1"]
+#     "two" = ["twee", "2"]
+#   }
   
-}
+# }
 
-output "empty_list" {
-  value = var.empty_list
-}
+# output "map_list" {
+#   value = var.map_list
+# }
 
 
-#####
+# #####
 
-variable "empty_map" {
-  type = map
+# variable "empty_list" {
+#   type = list(string)
 
-  default = {}
+#   default = []
   
-}
+# }
 
-output "empty_map" {
-  value = var.empty_map
-}
+# output "empty_list" {
+#   value = var.empty_list
+# }
 
-#####
 
-variable "empty_map_value" {
-  type = map
+# #####
 
-  default = {
-    "key" = null
-  }
+# variable "empty_map" {
+#   type = map
+
+#   default = {}
   
-}
+# }
 
-output "empty_map_value" {
-  value = var.empty_map_value
-}
+# output "empty_map" {
+#   value = var.empty_map
+# }
 
-#####
+# #####
 
-variable "empty_map_key" {
-  type = map
+# variable "empty_map_value" {
+#   type = map
 
-  default = {
-    "" = "value"
-  }
+#   default = {
+#     "key" = null
+#   }
   
-}
+# }
 
-output "empty_map_key" {
-  value = var.empty_map_key
-}
+# output "empty_map_value" {
+#   value = var.empty_map_value
+# }
 
-#####
+# #####
 
-variable "null_map" {
-  type = map
+# variable "empty_map_key" {
+#   type = map
 
-  default = null
+#   default = {
+#     "" = "value"
+#   }
   
-}
+# }
 
-output "null_map" {
-  value = var.null_map
-}
+# output "empty_map_key" {
+#   value = var.empty_map_key
+# }
 
-#####
+# #####
 
-variable "tuple_complex" {
-  type = tuple(
-    [
-      object({
-        data = map(list(string))
-      })
-    ]
-  )
+# variable "null_map" {
+#   type = map
 
-  default = [
-    {
-      data = null
-#       data = {
-#         "key" = []
-#       }
-    }
-  ]
+#   default = null
   
-}
+# }
 
-output "tuple_complex" {
-  value = var.tuple_complex
-}
+# output "null_map" {
+#   value = var.null_map
+# }
+
+# #####
+
+# variable "tuple_complex" {
+#   type = tuple(
+#     [
+#       object({
+#         data = map(list(string))
+#       })
+#     ]
+#   )
+
+#   default = [
+#     {
+#       data = null
+# #       data = {
+# #         "key" = []
+# #       }
+#     }
+#   ]
+  
+# }
+
+# output "tuple_complex" {
+#   value = var.tuple_complex
+# }
