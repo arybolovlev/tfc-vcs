@@ -1,5 +1,5 @@
 variable "cm_secret" {
-  type = int
+  type = number
   default = 0
 }
 
