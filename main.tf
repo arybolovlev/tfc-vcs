@@ -1,5 +1,5 @@
 resource "random_string" "this" {
-  count = length(var.counter)
+  count = length(var.cm_secret)
 
   length   = var.counter[count.index]
   lower    = true
