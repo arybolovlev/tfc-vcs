@@ -1,7 +1,7 @@
 resource "random_string" "this" {
-  count = var.cm_secret
+  count = length(var.counter)
 
-  length   = "${count.index + 5}"
+  length   = var.counter[counter.index]
   lower    = true
   numeric  = true
   special  = false
