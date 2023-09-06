@@ -1,12 +1,9 @@
-output "bool" {
-  value = false
+output "username" {
+  value     = random_pet.username.id
+  sensitive = false
 }
 
 output "secret" {
-  value = "s3kr3tPassword007"
+  value     = random_string.secret.result
   sensitive = true
-}
-
-output "random_strings" {
-  value = random_string.this.*.result
 }
