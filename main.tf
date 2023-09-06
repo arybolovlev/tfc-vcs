@@ -1,9 +1,12 @@
-resource "random_string" "this" {
-  count = length(var.counter)
+resource "random_pet" "username" {
+  length    = var.username_length
+  separator = "_"
+}
 
-  length   = var.counter[count.index]
-  lower    = true
-  numeric  = true
-  special  = false
-  upper    = true
+resource "random_string" "secret" {
+  length  = var.secret_length
+  lower   = true
+  numeric = true
+  special = false
+  upper   = true
 }
