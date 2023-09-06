@@ -1,10 +1,3 @@
-#variable "counter" {
-#  default = [
-#    1,
-#    2,
-#  ]
-#}
-
 variable "username_length" {
   default = 1
 }
