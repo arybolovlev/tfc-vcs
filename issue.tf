@@ -1,11 +1,11 @@
-variable "cm_secret" {
-  type = number
-  default = 0
-}
+#variable "cm_secret" {
+#  type = number
+#  default = 0
+#}
 
-output "cm_secret" {
-  value = var.cm_secret
-}
+#output "cm_secret" {
+#  value = var.cm_secret
+#}
 
 #####
 
