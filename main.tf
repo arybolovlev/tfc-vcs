@@ -10,3 +10,12 @@ resource "random_string" "secret" {
   special = false
   upper   = true
 }
+
+resource "time_sleep" "this" {
+  create_duration = "300s"
+
+  triggers = {
+    username  = random_pet.username.id
+    secret    = random_string.secret.result
+  }
+}
