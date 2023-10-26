@@ -25,6 +25,14 @@ output "null_map" {
   value = var.null_map
 }
 
+variable "null" {
+  default = null
+}
+
+output "null" {
+  value = var.null
+}
+
 #####
 
 # variable "issue" {
