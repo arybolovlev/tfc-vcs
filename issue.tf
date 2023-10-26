@@ -1,11 +1,20 @@
-#variable "cm_secret" {
-#  type = number
-#  default = 0
-#}
+variable "number" {
+  type = number
+  default = 5
+}
 
-#output "cm_secret" {
-#  value = var.cm_secret
-#}
+output "number" {
+  value = var.number
+}
+
+variable "bool" {
+  type = bool
+  default = false
+}
+
+output "bool" {
+  value = var.bool
+}
 
 #####
 
