@@ -94,16 +94,14 @@ output "issue_2" {
 
 # #####
 
-# variable "list_int" {
-#   type = list(number)
+variable "list_int" {
+  type = list(number)
+  default = [1, 2]
+}
 
-#   default = [1, 2]
-  
-# }
-
-# output "list_int" {
-#   value = var.list_int
-# }
+output "list_int" {
+  value = var.list_int
+}
 
 # #####
 
