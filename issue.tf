@@ -16,6 +16,15 @@ output "bool" {
   value = var.bool
 }
 
+variable "null_map" {
+  type = map
+  default = null
+}
+
+output "null_map" {
+  value = var.null_map
+}
+
 #####
 
 # variable "issue" {
