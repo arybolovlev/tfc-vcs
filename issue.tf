@@ -28,22 +28,20 @@
 
 # #####
 
-# variable "issue_2" {
-#   type = object({
-#     string = string
-#     list   = list(string)
-#   })
+variable "issue_2" {
+  type = object({
+    string = string
+    list   = list(string)
+  })
+  default = {
+    string = "text"
+    list   = ["een", "twee"]
+  }  
+}
 
-#   default = {
-#       string = "text"
-#       list   = ["een", "twee"]
-#     }
-  
-# }
-
-# output "issue_2" {
-#   value = var.issue_2
-# }
+output "issue_2" {
+  value = var.issue_2
+}
 
 
 # #####
@@ -100,19 +98,17 @@
 
 # #####
 
-# variable "map" {
-#   type = map
+variable "map" {
+  type = map
+  default = {
+    "one" = "een"
+    "two" = "twee"
+  }
+}
 
-#   default = {
-#     "one" = "een"
-#     "two" = "twee"
-#   }
-  
-# }
-
-# output "map" {
-#   value = var.map
-# }
+output "map" {
+  value = var.map
+}
 
 # #####
 
