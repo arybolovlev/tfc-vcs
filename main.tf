@@ -12,7 +12,7 @@ resource "random_string" "secret" {
 }
 
 resource "time_sleep" "this" {
-  create_duration = "120s"
+  create_duration = var.create_duration
 
   triggers = {
     username  = random_pet.username.id
