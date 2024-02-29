@@ -3,5 +3,5 @@ variable "username_length" {}
 variable "secret_length" {}
 
 variable "create_duration" {
-  default = "15s"
+  default = "10s"
 }
