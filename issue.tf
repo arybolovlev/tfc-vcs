@@ -1,6 +1,6 @@
 variable "number" {
   type = number
-  default = 5
+  default = 4
 }
 
 output "number" {
