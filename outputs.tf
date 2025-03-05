@@ -11,7 +11,7 @@ output "secret" {
 output "multiline_string" {
   value     = <<EOT
 hello
-world
+world!
 EOT
   sensitive = false
 }
