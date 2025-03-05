@@ -1,4 +1,4 @@
 output "vcs" {
-  value     = "vcs3"
+  value     = "vcs1"
   sensitive = false
 }
